@@ -1,6 +1,8 @@
-import React, { Component } from 'react';
+import React, { Component , useState } from 'react';
 import './App.css';
 import "@ionic/react"
+
+const [ showToast , setShowToast  ] = useState(false)
 
 class App extends Component {
   render() {
@@ -22,6 +24,10 @@ class App extends Component {
 
             testing
               </ion-card-content>
+              <ion-button onClick={ () => setShowToast(true)} >
+            <ion-icon name="add-sharp"></ion-icon>
+              </ion-button>
+
         </ion-card>
 
             Edit <code>src/App.js</code>
@@ -36,6 +42,11 @@ class App extends Component {
         >
           Learn React
           </a>
+          <ion-footer>
+            <ion-toast 
+            isOpen = {showToast} 
+            onDidDismiss = {()}
+          </ion-footer>
       </div>
     );
   }

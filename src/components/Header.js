@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import './../index.css';
 import "@ionic/react"
 
-
 class Header extends Component {
 
     render() {
@@ -16,6 +15,7 @@ class Header extends Component {
                     </ion-title>
                 </ion-toolbar>
             </ion-header>
+           
 
 
         );

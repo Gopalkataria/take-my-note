@@ -1,4 +1,6 @@
 dependencies:
+  '@ionic/react': 5.1.1
+  '@ionic/react-router': 5.1.1
   react: 16.8.6
   react-dom: 16.8.6
   react-scripts: 3.0.1
@@ -1619,6 +1621,37 @@ packages:
     dev: false
     resolution:
       integrity: sha512-gZDI/eXOIk8kP2PkUKjWu9RW8GGVd2Hkgjxyr/S7Z+JF+0mr7bAlbw+DkTRxnD580o8Kqxlnba9wvqp5aOHBww==
+  /@ionic/core/5.1.1:
+    dependencies:
+      ionicons: 5.0.1
+      tslib: 1.13.0
+    dev: false
+    resolution:
+      integrity: sha512-mmQL7hzwwReqFCJlRyxo3sNoI7r63GYnZD6QBXbYmCp83POvL89fQYegUfURM1Fcw0JiAZ3BsCoMYxuFXa7+cA==
+  /@ionic/react-router/5.1.1:
+    dependencies:
+      tslib: 2.0.0
+    dev: false
+    peerDependencies:
+      '@ionic/core': 5.1.1
+      '@ionic/react': 5.1.1
+      react: ^16.8.6
+      react-dom: ^16.8.6
+      react-router: ^5.0.1
+      react-router-dom: ^5.0.1
+    resolution:
+      integrity: sha512-jv3jotjPbkTqwgyyjk0PGiVyrc+jBmG6yx0eKvFL+GYV81CPV+JA5P/krOqZaxvydXWqlgqke0yI1CQk8WbAZw==
+  /@ionic/react/5.1.1:
+    dependencies:
+      '@ionic/core': 5.1.1
+      ionicons: 5.0.1
+      tslib: 2.0.0
+    dev: false
+    peerDependencies:
+      react: ^16.8.6
+      react-dom: ^16.8.6
+    resolution:
+      integrity: sha512-2a6WsidlmxljoPbKwqstHYxbI2cOU+A1Am3RRCgn0CnCFNP155bO0K/2P1vDDZEPGAIO3UcJ4xTnpXKLlQY6/w==
   /@jest/console/24.7.1:
     dependencies:
       '@jest/source-map': 24.3.0
@@ -5555,6 +5588,10 @@ packages:
       node: '>=4'
     resolution:
       integrity: sha512-wPVv/y/QQ/Uiirj/vh3oP+1Ww+AWehmi1g5fFWGPF6IpCBCDVrhgHRMvrLfdYcwDh3QJbGXDW4JAuzxElLSqKA==
+  /ionicons/5.0.1:
+    dev: false
+    resolution:
+      integrity: sha512-P9GHr7pgCJcG211W0wute49NZ9AvJZvFJf4OwYybakjX6j7tu0q5t5HNWn9bcb9YjI7SxBblJg8iqQ1Yb59DXw==
   /ip-regex/2.1.0:
     dev: false
     engines:
@@ -10100,10 +10137,18 @@ packages:
       typescript: '*'
     resolution:
       integrity: sha512-f5Knjh7XCyRIzoC/z1Su1yLLRrPrFCgtUAh/9fCSP6NKbATwpOL1+idQVXQokK9GRFURn/jYPGPfegIctwunoA==
+  /tslib/1.13.0:
+    dev: false
+    resolution:
+      integrity: sha512-i/6DQjL8Xf3be4K/E6Wgpekn5Qasl1usyw++dAA35Ue5orEn65VIxOA+YvNNl9HV3qv70T7CNwjODHZrLwvd1Q==
   /tslib/1.9.3:
     dev: false
     resolution:
       integrity: sha512-4krF8scpejhaOgqzBEcGM7yDIEfi0/8+8zDRZhNZZ2kjmHJ4hv3zCbQWxoJGz1iw5U0Jl0nma13xzHXcncMavQ==
+  /tslib/2.0.0:
+    dev: false
+    resolution:
+      integrity: sha512-lTqkx847PI7xEDYJntxZH89L2/aXInsyF2luSafe/+0fHOMjlBNXdH6th7f70qxLDhul7KZK0zC8V5ZIyHl0/g==
   /tsutils/3.10.0:
     dependencies:
       tslib: 1.9.3
@@ -10922,6 +10967,8 @@ registry: 'https://registry.npmjs.org/'
 shrinkwrapMinorVersion: 9
 shrinkwrapVersion: 3
 specifiers:
+  '@ionic/react': ^5.1.1
+  '@ionic/react-router': ^5.1.1
   react: ^16.8.6
   react-dom: ^16.8.6
   react-scripts: ^3.0.1

@@ -1,16 +1,23 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.css';
 import "@ionic/react"
 
 class App extends Component {
   render() {
     return (
-      <div className="App">
-        <ion
-        <header className="App-header">
+      <div>
+        <ion-header color="error">
+          <ion-toolbar>
+            <ion-title  slot="centre">
+              Clip
+
+            </ion-title>
+          </ion-toolbar>
+          
+        </ion-header>
           <p>
-            <ion-card>
+            <ion-card color="primary">
+            
               <ion-card-content>
 
               testing
@@ -28,8 +35,7 @@ class App extends Component {
             rel="noopener noreferrer"
           >
             Learn React
-          </a>
-        </header>      
+          </a>     
       </div>
     );
   }

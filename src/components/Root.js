@@ -1,7 +1,10 @@
 import React, { Component } from 'react';
-import './../index.css';
+import "react-router-dom" ; 
 import "@ionic/react";
 import "@ionic/react-router" ; 
+
+// ionic css
+import './../index.css';
 
 import Header from "./Header"
 import Home from "./Home"

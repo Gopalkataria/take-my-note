@@ -18,7 +18,15 @@ class Root extends Component {
         return (
             <ion-app>
                 <Header/>
-                <Ho
+                <IonReactRouter>
+                <IonPage>
+                  
+                  <IonRouterOutlet>
+                    <Route path="/home" component={Home} />
+                    <Route path="/edit" component={Edit} />
+                  </IonRouterOutlet>
+                  </IonPage>
+            </IonReactRouter>
             </ion-app>
         )
 

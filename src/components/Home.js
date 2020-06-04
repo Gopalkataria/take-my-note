@@ -15,7 +15,7 @@ class Home extends Component {
             <>
 
 
-            <Header/>
+            <Header atHome={true}/>
 
 
             <ion-content fullscreen={false}>

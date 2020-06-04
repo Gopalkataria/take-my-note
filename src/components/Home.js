@@ -14,13 +14,11 @@ class Home extends Component {
                
                 { list.map( (el) => {
 
-                    return (
                 <ion-card>
                     <ion-card-content>
                         card no. = {el}
                         </ion-card-content>
                 </ion-card> 
-                    )
 
 
                 }  )}

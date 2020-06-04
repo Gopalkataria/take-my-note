@@ -1,8 +1,9 @@
 import React, { Component } from 'react';
 import './../index.css';
 import "@ionic/react";
+import Header from "./Header" ; 
 
-const list = [ 1,2,3,4,5,6,7,8 ]
+const list = [ 1,2,3 ]
 
 
 class Home extends Component {
@@ -10,8 +11,12 @@ class Home extends Component {
 
         return( 
 
+            <>
 
-            
+
+            <Header/>
+
+
             <ion-content fullscreen={false}>
                
                 { list.map( (el) => {
@@ -26,12 +31,23 @@ class Home extends Component {
 
                 }  )}
             
-           
+           <ion-card>
+
+               <ion-card-content>
+                   <ion-button size="large">
+                       <ion-icon icon={add-sharp}/>
+                   </ion-button>
+               </ion-card-content>
+           </ion-card>
              
                 
 
+            
                    
             </ion-content>
+
+
+            </>
 
         )
     }

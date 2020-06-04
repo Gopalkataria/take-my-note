@@ -1,7 +1,8 @@
 import React, { Component  } from 'react';
+// import { Route } from "react-router-dom" ; 
 import './../index.css';
 import "@ionic/react";
-import "@ionic/react-router"
+// import "@ionic/react-router"
 
 // importing components 
 import Header from "./Header"
@@ -14,12 +15,7 @@ class Root extends Component {
     return (
       <ion-app>
         <Header/>
-        <ion-react-router>
-          <ion-router-outlet>
-            <route path="/edit" component = {Edit} ></route>
-            <route path="/" component={Home}></route>
-          </ion-router-outlet>
-        </ion-react-router>
+        <Home/>
     
       </ion-app>
     );

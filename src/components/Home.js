@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import './../index.css';
 import "@ionic/react";
 import Header from "./Header" ; 
-import "ionicons/icons" ; 
+import {star} from "ionicons/icons" ; 
 
 const list = [ 1,2,3 ]
 
@@ -35,8 +35,8 @@ class Home extends Component {
            <ion-card>
 
                <ion-card-content>
-                   <ion-button size="large">
-                                <ion-icon icon={arrow-forward-circle-outline}/>
+                   <ion-button size="large" href="/edit">
+                                <ion-icon icon={star}/>
                    </ion-button>
                </ion-card-content>
            </ion-card>

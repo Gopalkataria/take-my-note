@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import './../index.css';
 import "@ionic/react"
+import {home} from "ionicons/icons" ; 
 
 class Header extends Component {
 
@@ -10,7 +11,10 @@ class Header extends Component {
 
             <ion-header mode="ios">
                 <ion-toolbar>
-                    <ion-title color="primary" slot="start" size="large">
+                    <ion-button  href="/" slot="start" >
+                        <ion-icon icon={home}></ion-icon>
+                    </ion-button>
+                    <ion-title color="primary"size="large">
                         Clip
                     </ion-title>
                 </ion-toolbar>

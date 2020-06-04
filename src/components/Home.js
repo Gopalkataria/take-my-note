@@ -10,6 +10,8 @@ class Home extends Component {
 
         return( 
 
+
+            
             <ion-content fullscreen={false}>
                
                 { list.map( (el) => {
@@ -24,9 +26,8 @@ class Home extends Component {
 
                 }  )}
             
-            <ion-card
-              
-              </ion-card>
+           
+             
                 
 
                    

@@ -17,12 +17,15 @@ class Root extends Component {
     render() {
         return (
             <ion-app>
-                <Header/>
+                
                 <IonReactRouter>
                 <IonPage>
                   
+                
+                  <Header/>
                   <IonRouterOutlet>
-                    <Route path="/home" component={Home} />
+                    
+                    <Route exact path="/" component={Home} />
                     <Route path="/edit" component={Edit} />
                   </IonRouterOutlet>
                   </IonPage>

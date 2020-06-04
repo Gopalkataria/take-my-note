@@ -18,7 +18,7 @@ class Root extends Component {
         return (
             <ion-app>
                 <Header/>
-                <Edit/>
+                <Ho
             </ion-app>
         )
 

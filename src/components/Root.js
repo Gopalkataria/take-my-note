@@ -1,8 +1,11 @@
 import React, { Component } from 'react';
 import './../index.css';
-import 'react-router-dom'
+
+import { Route } from 'react-router-dom';
+import { IonApp, IonPage, IonRouterOutlet } from '@ionic/react';
+import { IonReactRouter } from '@ionic/react-router';
+
 import "@ionic/react";
-import "@ionic/react-router" ; 
 
 import Header from "./Header";
 import Home from "./Home";
@@ -14,12 +17,8 @@ class Root extends Component {
     render() {
         return (
             <ion-app>
-                <ion-react-router>
-                    <ion-router-outlet>
-                        <route path="/edit" component={Edit} />
-                        <route exact path="/" component={Home} />
-                    </ion-router-outlet>
-                </ion-react-router>
+                <Header/>
+                <Edit/>
             </ion-app>
         )
 

@@ -24,7 +24,7 @@ class Home extends Component {
 
                 }  )}
             
-            <ion-card>
+            <ion-card
               
               </ion-card>
                 

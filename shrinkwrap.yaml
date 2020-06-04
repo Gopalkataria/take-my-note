@@ -1,6 +1,7 @@
 dependencies:
   '@ionic/react': 5.1.1
   '@ionic/react-router': 5.1.1
+  ionicons: 5.0.1
   react: 16.8.6
   react-dom: 16.8.6
   react-router: 5.2.0
@@ -11071,6 +11072,7 @@ shrinkwrapVersion: 3
 specifiers:
   '@ionic/react': ^5.1.1
   '@ionic/react-router': ^5.1.1
+  ionicons: ^5.0.1
   react: ^16.8.6
   react-dom: ^16.8.6
   react-router: ^5.2.0

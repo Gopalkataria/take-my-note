@@ -17,7 +17,7 @@ class Header extends Component {
 
            
 
-            <ion-header mode="md">
+            <ion-header >
                 <ion-toolbar>
                         <Link to="/" slot="start">
                     <ion-button hidden={this.props.atHome}  fill="outline"   >

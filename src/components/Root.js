@@ -2,7 +2,7 @@
 import React, { Component } from 'react';
 import { Route  } from 'react-router-dom';
 import "react-dom"
-import {  IonPage, IonRouterOutlet } from '@ionic/react';
+import {  IonRouterOutlet } from '@ionic/react';
 import { IonReactRouter } from '@ionic/react-router';
 import "@ionic/react";
 

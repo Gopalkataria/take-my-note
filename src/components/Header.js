@@ -19,10 +19,12 @@ class Header extends Component {
 
             <ion-header mode="md">
                 <ion-toolbar>
-                    <ion-button hidden={this.props.atHome} slot="start" fill="outline" >
+                        <Link to="/" slot="start">
+                    <ion-button hidden={this.props.atHome}  fill="outline"   >
                         <ion-icon icon={home} color="primary"/>
-                        <Link to="/"/>
+
                     </ion-button>
+                        </Link>
                     <ion-title color="primary">
                         Clip
                     </ion-title>

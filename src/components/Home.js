@@ -38,9 +38,12 @@ class Home extends Component {
            <ion-card>
 
                <ion-card-content>
-                   <ion-button size="large" href="/edit">
+                   <Link to="/edit">
+
+                                <ion-button size="large" href="/edit" routerDirection="forward" >
                                 <ion-icon icon={star}/>
                    </ion-button>
+                   </Link>
                </ion-card-content>
            </ion-card>
 

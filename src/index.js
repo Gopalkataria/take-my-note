@@ -5,6 +5,8 @@ import Root from './components/Root';
 import * as serviceWorker from './serviceWorker';
 import "@ionic/react"
 
+// import * as firebase from "firebase/app" ; 
+
 
 
 ReactDOM.render(<Root />, document.getElementById('root'));

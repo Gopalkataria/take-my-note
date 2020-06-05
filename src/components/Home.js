@@ -3,7 +3,7 @@ import './../index.css';
 import "@ionic/react";
 import Header from "./Header" ; 
 import {star} from "ionicons/icons" ; 
-import Edit from "./Edit"
+// import Edit from "./Edit"
 
 import "@ionic/react-router"
 import { Link } from "react-router-dom"; 

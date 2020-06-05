@@ -19,15 +19,15 @@ class Root extends Component {
             <ion-app>
                 
                 <IonReactRouter>
-                    <IonRouterOutlet animated={true}>
+                    <IonRouterOutlet >
                          
-                
                     <IonPage>
+                
 
                     <Route exact path="/" component={Home} />
                     <Route path="/edit" component={Edit} />
-                    </IonPage>
                     
+                    </IonPage>
                     </IonRouterOutlet>
                 
             </IonReactRouter>

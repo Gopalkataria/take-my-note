@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
+import {Link} from "react-router-dom" ; 
 import './../index.css';
 import "@ionic/react"
+import "@ionic/react-router"
 
 import Header from  "./Header"
 
@@ -22,7 +24,7 @@ class Edit extends Component {
 
                 <ion-card>
                     <ion-card-content>
-                        sample content
+                        <Link to="/" > Link to Home </Link>
                 </ion-card-content>
 
                 </ion-card>

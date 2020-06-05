@@ -24,13 +24,13 @@ class Root extends Component {
                 <IonReactRouter>
                     <IonRouterOutlet >
                          
-                    <IonPage>
+                    <Switch>
                 
 
                     <Route exact path="/" component={Home} />
                     <Route path="/edit" component={Edit} />
                     
-                    </IonPage>
+                    </Switch>
                     </IonRouterOutlet>
                 
             </IonReactRouter>

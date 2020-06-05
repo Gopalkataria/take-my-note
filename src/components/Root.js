@@ -19,7 +19,7 @@ class Root extends Component {
             <ion-app>
                 
                 <IonReactRouter>
-                    <IonRouterOutlet>
+                    <IonRouterOutlet animated={true}>
                          
                 <Switch>
 

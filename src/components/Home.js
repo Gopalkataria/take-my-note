@@ -3,6 +3,7 @@ import './../index.css';
 import "@ionic/react";
 import Header from "./Header" ; 
 import {star} from "ionicons/icons" ; 
+import Edit from "./Edit"
 
 import "@ionic/react-router"
 import { Link } from "react-router-dom"; 
@@ -49,12 +50,13 @@ class Home extends Component {
 
            <ion-card>
                <ion-card-content>
-                   <Link to="/edit" > link to edit
+                            <Link routerDirection="back"   > link to edit
                        </Link>
                </ion-card-content>
            </ion-card>
              
-                
+                  
+
 
             
                    

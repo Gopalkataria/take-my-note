@@ -4,11 +4,11 @@ import "@ionic/react";
 import Header from "./Header" ; 
 // import Edit from "./Edit"
 
-import items from "./Root"
+import {items} from "./Root"
 import "@ionic/react-router"
 import { Link } from "react-router-dom"; 
   
-
+// let items = [1,1,2,2,3,3]
 
 
 class Home extends Component {
@@ -38,10 +38,8 @@ class Home extends Component {
                         <Link to="/edit" > el </Link>
                         </ion-card-subtitle>
 
-                        <ion-item>
 
                         card no. = {el}
-                        </ion-item>
 
                         </ion-card-content>
                 </ion-card> )

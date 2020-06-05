@@ -11,6 +11,8 @@ import './../index.css';
 import Home from "./Home";
 import Edit from "./Edit"    ;
 
+list = [ 1,2,3,4]
+
 
 class Root extends Component {
 
@@ -24,7 +26,7 @@ class Root extends Component {
                     <IonPage>
                 
 
-                    <Route exact path="/" component={Home} />
+                    <Route exact path="/" render={ (list) => {return <Home items={list} /> }} />
                     <Route path="/edit" component={Edit} />
                     
                     </IonPage>

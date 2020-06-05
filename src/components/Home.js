@@ -2,9 +2,9 @@ import React, { Component } from 'react';
 import './../index.css';
 import "@ionic/react";
 import Header from "./Header" ; 
-import {star} from "ionicons/icons" ; 
 // import Edit from "./Edit"
 
+import items from "./Root"
 import "@ionic/react-router"
 import { Link } from "react-router-dom"; 
   
@@ -24,12 +24,12 @@ class Home extends Component {
 
             <ion-content fullscreen={false}>
                
-                { this.props.items.map( (el) => {
+                { items.map( (el) => {
 
                     return (
                 <ion-card>
                     <ion-card-content>
-                        
+
                         <ion-card-title>
                             el
                         </ion-card-title>

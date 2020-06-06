@@ -50,8 +50,14 @@ class Home extends Component {
                     </ion-list>
 
 
+                
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
 
-                    <></>
                 </ion-content>
 
             </>

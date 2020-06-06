@@ -6,6 +6,8 @@ import "@ionic/react-router"
 
 import Header from  "./Header"
 
+import { home } from "ionicons/icons"; 
+
 class Edit extends Component {
 
     render() {
@@ -24,7 +26,11 @@ class Edit extends Component {
 
                 <ion-card>
                     <ion-card-content>
-                        <Link to="/" > Link to Home </Link>
+                        <Link to="/" > 
+                        <ion-button>
+                            <ion-icon icon={home}></ion-icon>
+                        </ion-button>
+                        Link to Home </Link>
                 </ion-card-content>
 
                 </ion-card>

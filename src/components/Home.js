@@ -1,57 +1,64 @@
 import React, { Component } from 'react';
 import './../index.css';
 import "@ionic/react";
-import Header from "./Header" ; 
+import Header from "./Header";
 // import Edit from "./Edit"
 
-import {items} from "./Root"
+import { items } from "./Root"
 import "@ionic/react-router"
-import { Link } from "react-router-dom"; 
-  
+import { Link } from "react-router-dom";
+
 // let items = [1,1,2,2,3,3]
 
 
 class Home extends Component {
     render() {
 
-        return( 
+        return (
 
             <>
 
 
-            <Header atHome={true}/>
+                <Header atHome={true} />
 
 
-            <ion-content fullscreen={false}>
-               
-                { items.map( (el) => {
+                <ion-content fullscreen={true} scrollY={true} class="has-footer" overflow-scroll="false">
+                    <ion-list>
 
-                    return (
-                <ion-card>
-                    <ion-card-content>
 
-                        
+                        {items.map((el) => {
 
-                        <ion-card-title>
-                        <Link to="/edit" > {el} </Link>
-                        </ion-card-title>
+                            return (
+                                <ion-card>
+                                    <ion-card-content>
+
+
+
+                                        <ion-card-title>
+                                            <Link to="/edit" > {el} </Link>
+                                        </ion-card-title>
 
 
                         card no. = {el}
 
-                        </ion-card-content>
-                </ion-card> )
+                                    </ion-card-content>
+                                </ion-card>)
 
 
-                }  )}
-            
-           </ion-content>
+                        })}
 
-                </>
-           
+                    </ion-list>
+
+
+
+                    <></>
+                </ion-content>
+
+            </>
+
 
         )
     }
 }
 
-export default Home ; 
+export default Home; 

@@ -4,8 +4,15 @@ let container = {
 
     containers : [ ] ,
 
-    get : function( id ){ return this.containers[id]} 
+    get : function( elem ){ return this.containers[elem]} ,
 
-    add : function( id ) {   this.containers. }
+    remove : function( elem ) {   this.containers = this.containers.filter(  
+            ( item) => {return item != elem }
+     ) } , 
+
+    add : function( elem ) { this.containers.push( elem)}
+
+
+
 
 }

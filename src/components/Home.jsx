@@ -62,12 +62,6 @@ class Home extends Component {
 
 
 
-                    <br />
-                    <br />
-                    <br />
-                    <br />
-                    <br />
-                    <br />
 
                 </ion-content>
 

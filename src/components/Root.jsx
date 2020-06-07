@@ -31,6 +31,7 @@ class Root extends Component {
                     <Route path="/edit" component={Edit} />
                     <Route path="/" exact component={ () => { return ( <Redirect to="/home" />)}} />
 
+                         
                     </IonPage>
                     
                    

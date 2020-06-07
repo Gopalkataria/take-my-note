@@ -30,7 +30,7 @@ class Home extends Component {
                             items.map((el) => {
 
                                 return (
-                                    <ion-card>
+                                    <ion-card key={el.toString()}>
 
                                         <ion-card-header>
 

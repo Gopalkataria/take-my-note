@@ -32,7 +32,7 @@ class Edit extends Component {
 
           <ion-card>
             <ion-card-content>
-              <ion-button routerLink="/">
+              <ion-button routerLink="/home">
                 <ion-icon icon={home}></ion-icon>
               </ion-button>
             </ion-card-content>

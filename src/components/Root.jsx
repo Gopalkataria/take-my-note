@@ -2,7 +2,7 @@
 import React, { Component } from 'react';
 import { Route , Redirect  , Switch } from 'react-router-dom';
 import "react-dom"
-import {  IonPage , IonRouterOutlet } from '@ionic/react';
+import {   IonRouterOutlet } from '@ionic/react';
 import { IonReactRouter } from '@ionic/react-router';
 import "@ionic/react";
 
@@ -15,7 +15,7 @@ export let items = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15] ;
 
 
 
-class Root extends Component {
+class Root extends React.FC {
 
     render() {
         return (
@@ -24,15 +24,17 @@ class Root extends Component {
                 <IonReactRouter>
                     <IonRouterOutlet >
                     
-                        <IonPage>
 
-                
+                {/* <ion-page>
+
+                        <Switch> */}
 
                     <Route path="/home" component={Home} />
                     <Route path="/edit" component={Edit} />
                     <Route path="/" exact component={ () => { return ( <Redirect to="/home" />)}} />
 
-                        </IonPage>
+                        {/* </Switch>
+                </ion-page> */}
                          
                     
                     

@@ -11,7 +11,7 @@ import { home , pin } from "ionicons/icons";
 class Edit extends Component {
   render() {
     return (
-      <>
+      <ion-page>
         <Header />
         <ion-content>
           <ion-card>
@@ -42,7 +42,7 @@ class Edit extends Component {
             go back man
           </ion-router-link>
         </ion-content>
-      </>
+      </ion-page>
     );
   }
 }

@@ -15,7 +15,7 @@ export let items = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15] ;
 
 
 
-class Root extends React.FC {
+class Root extends Component {
 
     render() {
         return (
@@ -24,17 +24,16 @@ class Root extends React.FC {
                 <IonReactRouter>
                     <IonRouterOutlet >
                     
+                    <Switch>
 
-                {/* <ion-page>
-
-                        <Switch> */}
+              
+                    <Route path="/" exact component={ () => { return ( <Redirect to="/home" />)}} />
 
                     <Route path="/home" component={Home} />
                     <Route path="/edit" component={Edit} />
-                    <Route path="/" exact component={ () => { return ( <Redirect to="/home" />)}} />
 
-                        {/* </Switch>
-                </ion-page> */}
+                    </Switch>
+                      
                          
                     
                     

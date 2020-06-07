@@ -16,7 +16,7 @@ class Home extends Component {
 
         return (
 
-            <>
+            <ion-page>
 
 
                 <Header atHome={true} />
@@ -48,6 +48,10 @@ class Home extends Component {
 
                                         card no. = {el}
 
+                                        <ion-button routerLink="/edit">
+                                            edit
+                                        </ion-button>
+
                                         </ion-card-content>
                                     </ion-card>
 
@@ -65,7 +69,7 @@ class Home extends Component {
 
                 </ion-content>
 
-            </>
+            </ion-page>
 
 
         )

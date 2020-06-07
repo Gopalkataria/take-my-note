@@ -16,7 +16,7 @@ class Edit extends Component {
 
 
             <>
-            <Header/>
+            <Header showBackButton={false}/>
             <ion-content>
                 <ion-card>
                     <ion-card-content>

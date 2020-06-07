@@ -26,15 +26,20 @@ class Edit extends Component {
 
                 <ion-card>
                     <ion-card-content>
-                        <Link to="/" > 
-                        <ion-button>
+                        <ion-button routerLink="/">
                             <ion-icon icon={home}></ion-icon>
                         </ion-button>
-                        Link to Home </Link>
                 </ion-card-content>
+
 
                 </ion-card>
 
+
+                    <ion-router-link to="/" routerDirection="back" >
+
+                        go back man
+
+</ion-router-link>
 
 
             </ion-content>

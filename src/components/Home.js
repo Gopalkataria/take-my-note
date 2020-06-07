@@ -19,7 +19,7 @@ class Home extends Component {
             <>
 
 
-                <Header />
+                <Header showBackButton={false} />
 
 
                 <ion-content fullscreen={true} scrollY={true} class="has-footer" overflow-scroll="false">

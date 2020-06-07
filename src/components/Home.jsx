@@ -36,7 +36,7 @@ class Home extends Component {
 
                                             <Link to="/edit" >
 
-                                                <ion-card-title align="center">
+                                                <ion-card-title >
                                                     {el}
                                                 </ion-card-title>
 

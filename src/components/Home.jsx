@@ -32,15 +32,19 @@ class Home extends Component {
                                 return (
                                     <ion-card>
 
+                                        <ion-card-header>
 
-                                        <ion-card-content>
                                             <Link to="/edit" >
 
-                                                <ion-card-title>
+                                                <ion-card-title align="center">
                                                     {el}
                                                 </ion-card-title>
 
                                             </Link>
+                                        </ion-card-header>
+
+
+                                        <ion-card-content>
 
                                         card no. = {el}
 

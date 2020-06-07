@@ -1,6 +1,6 @@
 
 import React, { Component } from 'react';
-import { Route , Switch } from 'react-router-dom';
+import { Route , Redirect  } from 'react-router-dom';
 import "react-dom"
 import {  IonPage , IonRouterOutlet } from '@ionic/react';
 import { IonReactRouter } from '@ionic/react-router';
@@ -29,7 +29,7 @@ class Root extends Component {
 
                     <Route path="/home" component={Home} />
                     <Route path="/edit" component={Edit} />
-                    <
+                    <Route path="/" exact component={ () => { return ( <Redirect to="/home" />)}} />
 
                     </IonPage>
                     

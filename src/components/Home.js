@@ -29,20 +29,24 @@ class Home extends Component {
                         {items.map((el) => {
 
                             return (
+                                            <Link to="/edit" >
                                 <ion-card>
+
+
                                     <ion-card-content>
 
-
-
                                         <ion-card-title>
-                                            <Link to="/edit" > {el} </Link>
+                                                {el}
                                         </ion-card-title>
 
 
-                        card no. = {el}
+                                        card no. = {el}
 
                                     </ion-card-content>
-                                </ion-card>)
+                                </ion-card>
+                                
+                                                 </Link>
+                                                 )
 
 
                         })}

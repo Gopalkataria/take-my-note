@@ -7,7 +7,7 @@ import "@ionic/react"
 import "@ionic/react-router"
 
 
-import {home} from "ionicons/icons" ; 
+import {chevronBack} from "ionicons/icons" ; 
 
 class Header extends Component {
 
@@ -20,8 +20,8 @@ class Header extends Component {
             <ion-header >
                 <ion-toolbar >
                         <Link to="/" slot="start">
-                    <ion-button hidden={this.props.atHome}  fill="outline"   >
-                        <ion-icon icon={home} color="primary"/>
+                    <ion-button hidden={this.props.atHome}  fill="clear"   >
+                        <ion-icon icon={chevronBack} color="primary"/>
 
                     </ion-button>
                         </Link>

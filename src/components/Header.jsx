@@ -26,7 +26,7 @@ class Header extends Component {
                     </ion-button>
                         </Link>
                     <ion-title color="primary">
-                        Clip
+                        Clippy
                     </ion-title>
                 </ion-toolbar>
             </ion-header>

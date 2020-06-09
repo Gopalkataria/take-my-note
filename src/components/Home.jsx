@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
 import './../index.css';
-import "@ionic/react";
+import "@Ionic/react";
 import Header from "./Header";
 // import Edit from "./Edit"
 
 import { items } from "./Root"
-import "@ionic/react-router"
+import "@Ionic/react-router"
 import { Link } from "react-router-dom";
 
 // let items = [1,1,2,2,3,3]
@@ -16,44 +16,44 @@ class Home extends Component {
 
         return (
 
-            <ion-page>
+            <IonPage>
 
 
                 <Header atHome={true} />
 
 
-                <ion-content fullscreen={true} scrollY={true} class="has-footer" overflow-scroll="false">
-                    <ion-list>
+                <IonContent fullscreen={true} scrollY={true} class="has-footer" overflow-scroll="false">
+                    <IonList>
 
 
                         {
                             items.map((el) => {
 
                                 return (
-                                    <ion-card key={el.toString()} >
+                                    <IonCard key={el.toString()} >
 
-                                        <ion-card-header>
+                                        <IonCardHeader>
 
                                             <Link to="/edit" >
 
-                                                <ion-card-title >
+                                                <IonCardTitle >
                                                     {el}
-                                                </ion-card-title>
+                                                </IonCardTitle>
 
                                             </Link>
-                                        </ion-card-header>
+                                        </IonCardHeader>
 
 
-                                        <ion-card-content>
+                                        <IonCardContent>
 
                                         card no. = {el}
 
-                                        <ion-button routerLink="/edit">
+                                        <IonButton routerLink="/edit">
                                             edit
-                                        </ion-button>
+                                        </IonButton>
 
-                                        </ion-card-content>
-                                    </ion-card>
+                                        </IonCardContent>
+                                    </IonCard>
 
                                 )
 
@@ -62,14 +62,14 @@ class Home extends Component {
 
                         }
 
-                    </ion-list>
+                    </IonList>
 
 
 
 
-                </ion-content>
+                </IonContent>
 
-            </ion-page>
+            </IonPage>
 
 
         )

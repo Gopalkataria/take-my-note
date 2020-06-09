@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './../index.css';
-import "@Ionic/react";
+import { IonPage , IonButton , IonCard , IonCardContent , IonCardHeader , IonCardTitle , IonContent , IonList , IonPage , I} "@Ionic/react";
 import Header from "./Header";
 // import Edit from "./Edit"
 

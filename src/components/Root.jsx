@@ -4,7 +4,7 @@ import { Route , Redirect  , Switch } from 'react-router-dom';
 import "react-dom"
 import {   IonRouterOutlet } from '@ionic/react';
 import { IonReactRouter } from '@ionic/react-router';
-import {IonApp  }"@ionic/react";
+import {IonApp  } from "@ionic/react";
 
 import './../index.css';
 

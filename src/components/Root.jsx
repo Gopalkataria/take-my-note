@@ -2,7 +2,7 @@
 import React, { Component } from 'react';
 import { Route , Redirect  , Switch } from 'react-router-dom';
 import "react-dom"
-import {   IonRouterOutlet } from '@ionic/react';
+import {  IonApp ,  IonRouterOutlet } from '@ionic/react';
 import { IonReactRouter } from '@ionic/react-router';
 import "@ionic/react";
 
@@ -19,7 +19,7 @@ class Root extends Component {
 
     render() {
         return (
-            <ion-app>
+            <IonApp>
                 
                 <IonReactRouter>
                     <IonRouterOutlet >
@@ -41,7 +41,7 @@ class Root extends Component {
                     </IonRouterOutlet>
                 
             </IonReactRouter>
-            </ion-app>
+            </IonApp>
         )
 
     }

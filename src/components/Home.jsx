@@ -6,6 +6,7 @@ import Header from "./Header";
 
 import { items } from "./Root"
 import "@ionic/react-router"
+import {} "@ionic/react-router"
 import { Link } from "react-router-dom";
 
 // let items = [1,1,2,2,3,3]
@@ -16,7 +17,7 @@ class Home extends Component {
 
         return (
 
-            <ion-page>
+            <IonPage>
 
 
                 <Header atHome={true} />
@@ -69,7 +70,7 @@ class Home extends Component {
 
                 </ion-content>
 
-            </ion-page>
+            </IonPage>
 
 
         )

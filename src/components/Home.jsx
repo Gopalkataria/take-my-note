@@ -64,7 +64,9 @@ class Home extends Component {
 
                     </IonList>
 
-
+                        <br/>
+                        <br/>
+                        <br/>
 
 
                 </IonContent>

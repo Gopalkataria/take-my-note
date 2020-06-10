@@ -3,6 +3,7 @@ import React, { Component } from 'react';
 import {Link} from "react-router-dom" ; 
 import './../index.css';
 import "@ionic/react"
+import {IonButton} from "@ionic/react"
 
 import "@ionic/react-router"
 
@@ -19,12 +20,10 @@ class Header extends Component {
 
             <ion-header >
                 <ion-toolbar >
-                        <Link to="/" slot="start">
-                    <ion-button hidden={this.props.atHome}  fill="clear"   >
+                    <IonButton routerLink="/home" hidden={this.props.atHome}  fill="clear" routerDirection="back"  slot="start" >
                         <ion-icon icon={chevronBack} color="primary"/>
 
-                    </ion-button>
-                        </Link>
+                    </IonButton>
                     <ion-title color="primary">
                         Clippy
                     </ion-title>

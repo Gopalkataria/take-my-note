@@ -24,7 +24,7 @@ class Root extends Component {
                 <IonReactRouter>
                     <IonRouterOutlet >
                     
-                    <Switch>
+                   
 
               
                     <Route path="/" exact component={ () => { return ( <Redirect to="/home" />)}} />
@@ -32,7 +32,7 @@ class Root extends Component {
                     <Route path="/home" component={Home} />
                     <Route path="/edit" component={Edit} />
 
-                    </Switch>
+                   
                       
                          
                     

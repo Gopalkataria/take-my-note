@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import "./../index.css";
 import "@ionic/react";
+import {IonPage} from "@ionic/react";
 import "@ionic/react-router";
 
 import Header from "./Header";
@@ -11,7 +12,7 @@ import { home , pin } from "ionicons/icons";
 class Edit extends Component {
   render() {
     return (
-      <ion-page>
+      <IonPage>
         <Header />
         <ion-content>
           <ion-card>
@@ -42,7 +43,7 @@ class Edit extends Component {
             go back man
           </ion-router-link>
         </ion-content>
-      </ion-page>
+      </IonPage>
     );
   }
 }

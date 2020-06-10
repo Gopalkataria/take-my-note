@@ -6,7 +6,7 @@ import Header from "./Header";
 
 import { items } from "./Root"
 import "@ionic/react-router"
-import {} "@ionic/react-router"
+import {IonPage , IonButton} from  "@ionic/react"
 import { Link } from "react-router-dom";
 
 // let items = [1,1,2,2,3,3]
@@ -49,9 +49,9 @@ class Home extends Component {
 
                                         card no. = {el}
 
-                                        <ion-button routerLink="/edit">
+                                        <IonButton routerLink="/edit">
                                             edit
-                                        </ion-button>
+                                        </IonButton>
 
                                         </ion-card-content>
                                     </ion-card>
@@ -65,7 +65,10 @@ class Home extends Component {
 
                     </ion-list>
 
-
+                        <br/>
+                        <br/>
+                        <br/>
+                        <br/>
 
 
                 </ion-content>

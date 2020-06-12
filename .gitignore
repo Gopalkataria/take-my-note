@@ -4,9 +4,14 @@
 /node_modules
 /.pnp
 .pnp.js
+.npm
+
+# glitch config
+.config
 
 # testing
 /coverage
+
 
 # production
 /build

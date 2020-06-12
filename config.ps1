@@ -1,0 +1,1 @@
+$env:path += ";F:\Gopal\node\"

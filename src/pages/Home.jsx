@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import './../index.css';
 import "@ionic/react";
-import Header from "./Header";
+import Header from "../components/Header";
 // import Edit from "./Edit"
 
 import { items } from "./Root"
@@ -80,4 +80,4 @@ class Home extends Component {
     }
 }
 
-export default Home; 
+export default Home;

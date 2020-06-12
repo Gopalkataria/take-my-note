@@ -5,7 +5,7 @@ import "@ionic/react";
 import {IonPage} from "@ionic/react";
 import "@ionic/react-router";
 
-import Header from "./Header";
+import Header from "../components/Header";
 
 import { home , pin } from "ionicons/icons";
 
@@ -23,7 +23,7 @@ class Edit extends Component {
           </ion-card>
 
           <ion-card>
-            
+
 
             <ion-card-content>
               This is content, without any paragraph or header tags, within an

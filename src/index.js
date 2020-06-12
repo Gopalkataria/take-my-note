@@ -1,11 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import Root from './components/Root';
+import Root from './pages/Root';
 import * as serviceWorker from './serviceWorker';
 import "@ionic/react"
 
-// import * as firebase from "firebase/app" ; 
+// import * as firebase from "firebase/app" ;
 
 
 

@@ -1,83 +1,40 @@
-import React, { Component } from 'react';
-import './../index.css';
-import "@ionic/react";
+import React, { Component } from "react";
+import "./../index.css";
 import Header from "../components/Header";
 // import Edit from "./Edit"
 
-import { items } from "./Root"
-import "@ionic/react-router"
-import {IonPage , IonButton} from  "@ionic/react"
-import { Link } from "react-router-dom";
+import { items } from "../javascript/containers";
 
-// let items = [1,1,2,2,3,3]
-
+import "@ionic/react-router";
+import { IonPage, IonList, IonContent } from "@ionic/react";
+import ContainerDisplayCard from "../components/ContainerDisplayCard";
 
 class Home extends Component {
-    render() {
+	render() {
+		return (
+			<IonPage>
+				<Header atHome={true} />
 
-        return (
+				<IonContent
+					fullscreen={true}
+					scrollY={true}
+					class="has-footer"
+					overflow-scroll="false"
+				>
+					<IonList>
+						{items.map((el) => {
+							return <ContainerDisplayCard key={el} content={el} title={el} />;
+						})}
+					</IonList>
 
-            <IonPage>
-
-
-                <Header atHome={true} />
-
-
-                <ion-content fullscreen={true} scrollY={true} class="has-footer" overflow-scroll="false">
-                    <ion-list>
-
-
-                        {
-                            items.map((el) => {
-
-                                return (
-                                    <ion-card key={el.toString()} >
-
-                                        <ion-card-header>
-
-                                            <Link to="/edit" >
-
-                                                <ion-card-title >
-                                                    {el}
-                                                </ion-card-title>
-
-                                            </Link>
-                                        </ion-card-header>
-
-
-                                        <ion-card-content>
-
-                                        card no. = {el}
-
-                                        <IonButton routerLink="/edit">
-                                            edit
-                                        </IonButton>
-
-                                        </ion-card-content>
-                                    </ion-card>
-
-                                )
-
-
-                            })
-
-                        }
-
-                    </ion-list>
-
-                        <br/>
-                        <br/>
-                        <br/>
-                        <br/>
-
-
-                </ion-content>
-
-            </IonPage>
-
-
-        )
-    }
+					<br />
+					<br />
+					<br />
+					<br />
+				</IonContent>
+			</IonPage>
+		);
+	}
 }
 
 export default Home;

@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 
-import {Link} from "react-router-dom" ; 
 import './../index.css';
 import "@ionic/react"
 import {IonButton} from "@ionic/react"
@@ -8,7 +7,7 @@ import {IonButton} from "@ionic/react"
 import "@ionic/react-router"
 
 
-import {chevronBack} from "ionicons/icons" ; 
+import {chevronBack} from "ionicons/icons" ;
 
 class Header extends Component {
 
@@ -16,7 +15,7 @@ class Header extends Component {
 
         return (
 
-           
+
 
             <ion-header >
                 <ion-toolbar >
@@ -29,7 +28,7 @@ class Header extends Component {
                     </ion-title>
                 </ion-toolbar>
             </ion-header>
-           
+
 
 
         );

@@ -1,0 +1,45 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"problemMatcher": [],
+			"options": {
+				"cwd": "${cwd}" ,
+
+			},
+			"isBackground": true,
+			"presentation": {
+				"echo": true,
+				"reveal": "silent",
+				"focus": false,
+				"panel": "new",
+				"showReuseMessage": false,
+				"clear": true
+			},
+			"label": "custom task",
+			"detail": " add npm to path and run react scripts start ",
+			"type": "shell",
+			"command": ".\\config.ps1 && npm start "
+		},
+		{
+			"type": "npm",
+			"script": "start",
+			"problemMatcher": [],
+			"label": "npm: start",
+			"detail": " react-scripts start" ,
+			"dependsOn" : "custom task" ,
+			"runOptions": {
+				"instanceLimit":  1
+			} ,
+			"isBackground": true,
+			"presentation": {
+				"echo": true,
+				"reveal": "silent",
+				"focus": false,
+				"panel": "new",
+				"showReuseMessage": false,
+				"clear": true
+			},
+		}
+	]
+}

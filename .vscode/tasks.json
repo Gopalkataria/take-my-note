@@ -40,6 +40,13 @@
 				"showReuseMessage": false,
 				"clear": true
 			},
+		} ,
+		{
+			"label": "config",
+			"type": "shell",
+			"command": "./config.ps1",
+			"problemMatcher": []
 		}
+
 	]
 }

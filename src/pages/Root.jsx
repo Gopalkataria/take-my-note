@@ -7,8 +7,8 @@ import "@ionic/react";
 
 import "./../index.css";
 
+
 import Home from "./Home";
-import Edit from "./Edit";
 
 
 
@@ -28,7 +28,6 @@ class Root extends Component {
 
 						<Route path="/home" component={Home} />
 
-						<Route path="/edit" component={Edit} />
 					</IonRouterOutlet>
 				</IonReactRouter>
 			</IonApp>

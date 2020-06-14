@@ -1,0 +1,28 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "node",
+
+            "env": {
+                "PATH" : "F:\\Gopal\\node\\"
+            } ,
+
+            "preLaunchTask": "config",
+            "request": "launch",
+            "name": "Launch Program",
+            "skipFiles": [
+                "<node_internals>/**"
+            ],
+            "runtimeExecutable": "F:\\gopal\\node\\node.exe",
+            "sourceMapPathOverrides": {
+                "webpack:///./~/*": "${workspaceRoot}/node_modules/*",
+                "webpack:///./*": "${workspaceRoot}/*",
+                "webpack:///*": "*"
+            }
+        }
+    ]
+}

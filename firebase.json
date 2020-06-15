@@ -3,7 +3,7 @@
 {
   "hosting": {
     "site": "takemynote",
-    "public": "\\build",
+    "public": "build",
     "ignore": [
       "firebase.json",
       "**/.*",

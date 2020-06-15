@@ -1,2 +1,0 @@
-(this["webpackJsonpstarter-react-app"]=this["webpackJsonpstarter-react-app"]||[]).push([[4],{149:function(t,n,e){"use strict";e.r(n),e.d(n,"startStatusTap",(function(){return o}));var r=e(10),o=function(){var t=window;t.addEventListener("statusTap",(function(){Object(r.h)((function(){var n=t.innerWidth,e=t.innerHeight,o=document.elementFromPoint(n/2,e/2);if(o){var a=o.closest("ion-content");a&&a.componentOnReady().then((function(){Object(r.n)((function(){return a.scrollToTop(300)}))}))}}))}))}}}]);
-//# sourceMappingURL=4.3c0bb713.chunk.js.map

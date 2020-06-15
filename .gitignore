@@ -14,7 +14,9 @@
 
 
 # production
-/build
+# not adding production 
+# build
+
 
 # misc
 .DS_Store

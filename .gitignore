@@ -9,6 +9,9 @@
 # glitch config
 .config
 
+# firebase stuff
+/.firebase
+.firebase
 # testing
 /coverage
 
@@ -26,3 +29,5 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+.firebase/hosting.YnVpbGQ.cache
+.firebase/hosting.YnVpbGQ.cache

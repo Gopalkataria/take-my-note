@@ -21,12 +21,11 @@ class Root extends Component {
 						<Route
 							path="/"
 							exact
-							component={() => {
-								return <Redirect to="/home" />;
-							}}
+							component={Home}
 						/>
 
 						<Route path="/home" component={Home} />
+						 <Redirect to="/404" /> 
 
 					</IonRouterOutlet>
 				</IonReactRouter>

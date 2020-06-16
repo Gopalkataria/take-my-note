@@ -1,15 +1,17 @@
 {
-  "short_name": "My Note",
-  "name": "Take My Note",
+  "name": "My notes",
+  "short_name": "Take my note",
+  "theme_color": "#d0d0d0",
+  "background_color": "#000000",
+  "display": "standalone",
+  "orientation": "portrait",
+  "scope": "/",
+  "start_url": "/home",
   "icons": [
     {
       "src": "favicon.ico",
-      "sizes": "64x64 32x32 24x24 16x16",
-      "type": "image/x-icon"
+      "size": "144x1444",
+      "type": "image/ico"
     }
-  ],
-  "start_url": ".",
-  "display": "standalone",
-  "theme_color": "#000000",
-  "background_color": "#ffffff"
+  ]
 }

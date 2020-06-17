@@ -21,16 +21,17 @@ class Home extends Component {
 				<IonHeader>
 					<IonToolbar>
 						<IonIcon class="ion-padding" icon={pencilSharp} slot="start" />
-						<IonTitle size="large" slot="primary">
+						<IonTitle size="large" slot="primary" class='ion-text-align-center'>
 
 							Note
 						</IonTitle>
 						<IonButton  slot="end" >
-							<IonIcon icon={saveOutline} />
+							Save
+							<IonIcon icon={saveOutline} class="ion-padding" />
 						</IonButton>
 					</IonToolbar>
 				</IonHeader>
-				<IonContent fullscreen={true} scrollY={true} overflow-scroll="false">
+				<IonContent fullscreen={false} scrollY={true} >
 					<Greeting />
 					<PersistentTextBox />
 				</IonContent>

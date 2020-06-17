@@ -1,11 +1,11 @@
 import React, { Component } from "react";
-import { IonTextarea, IonItem, IonLabel } from "@ionic/react";
-import "../styles/PersistentTextBox.css"
+import { IonTextarea, IonItem } from "@ionic/react";
+import "../styles/PersistentTextBox.css";
 
 class PersistentTextBox extends Component {
 	constructor(props) {
 		super(props);
-		this.state = { text: localStorage.getItem("text") };
+		this.state = { text: ""};
 	}
 
 	updateLocalStorage = (evt) => {
@@ -16,29 +16,43 @@ class PersistentTextBox extends Component {
 		localStorage.setItem("text", this.state.text);
 	};
 
+	componentDidMount() {
+		console.log("updating")
+
+		// window.addEventListener( "load" , () => {
+		// 	console.log("loaded")
+
+		// 	document.getElementById("textarea").setAttribute("auto-grow" , "true")
+		// })
+		this.setState({
+			text : localStorage.getItem("text")
+		})
+
+	}
+
 	render() {
 		return (
-			<IonItem
-			className="text-area-holder"
-			>
 
+			<IonItem>
 				<IonTextarea
-
-					class="ion-text"
-					autoGrow={true}
+					id="textarea"
+				className="ion-text ion-padding"
+					rows={20}
 					enterkeyhint="enter"
 					inputMode="text"
 					debounce="100"
-					rows={50}
+					maxlength={5000}
 					spellCheck={true}
 					onIonChange={this.updateLocalStorage}
 					placeholder="Enter your text here... The place holder will resize automatically if needed "
 					value={this.state.text}
-					>
-					<IonLabel position="floating"> Note </IonLabel>
-				</IonTextarea>
+					mode="ios"
+				>
+				My Note :
+			</IonTextarea>
 
-					</IonItem>
+
+			</IonItem>
 		);
 	}
 }

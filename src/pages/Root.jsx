@@ -25,7 +25,7 @@ class Root extends Component {
 						/>
 
 						<Route path="/home" component={Home} />
-						 <Redirect to="/404" /> 
+						 <Redirect to="/" />
 
 					</IonRouterOutlet>
 				</IonReactRouter>
